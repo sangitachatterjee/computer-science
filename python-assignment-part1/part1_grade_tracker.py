@@ -97,13 +97,7 @@ print(f"Updated average (all subjects): {updated_average}")
 # Task 3 — Class Performance Summary (7 marks)
 print("\n\nTask 3 — Class Performance Summary (7 marks)")
 
-class_data = [
-    ("Ayesha Sharma",  [88, 72, 95, 60, 78]),
-    ("Rohit Verma",    [55, 68, 49, 72, 61]),
-    ("Priya Nair",     [91, 85, 88, 94, 79]),
-    ("Karan Mehta",    [40, 55, 38, 62, 50]),
-    ("Sneha Pillai",   [75, 80, 70, 68, 85]),
-]
+class_data = [(s["name"], s["marks"]) for s in cleaned_students]
 
 NAME_COL = 18
 report_rows = []
